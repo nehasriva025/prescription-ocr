@@ -1,0 +1,209 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(142, 166, 211);
+}
+
+canvas{
+  width: 50%;
+  height: fit-content;
+}
+
+
+.AppContainer
+{
+  max-width: 300px;
+  background-color: white;
+  /* display: flex;  */
+  /* flex-direction: column; */
+  margin: 20px auto;
+  overflow:auto;
+  min-height: 550px;
+  height: fit-content; 
+  border-radius: 10px;
+  padding: 20;
+  
+
+}
+.AppHeader{
+  width: 100%;
+  background-color: white;
+  border-style: solid;
+  /* border-bottom: 3pt; */
+  border-color: rgb(3, 4, 94);
+  border-bottom-width: 5pt;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  /* border-radius: 10px; */
+  /* height: auto; */
+  
+
+  
+  /* text-align: center; */
+  /* text-align: center; */
+}
+.AppHeader p {
+  padding: 10px;
+  color: rgb(3, 4, 94);
+  font-size: 20px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  font-weight: bold;
+  /* background-color: aquamarine; */
+  text-align: center;
+  /* text-align: center; */
+}
+
+.chooseImage{
+  width: 100%; 
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  
+  /* text-align: center; */
+  /* background-color:pink ; */
+}
+.chooseImage button{
+    /*display: inline-block;*/
+    /* background: white; */
+    border-radius: 20px;
+    /* background-color: rgb(202, 240, 248); */
+    background-color: rgb(3, 4, 94);
+    color:white; 
+    border: none;
+    padding: 10px 20px;
+    margin: 5px; 
+    /* box-shadow: 0 9px #999; */
+    cursor: pointer;
+    font-size: 12px;
+    ;
+}
+.chooseImage button:hover{
+  /*display: inline-block;*/
+  /* background: white; */
+  border-radius: 20px;
+  /* background-color: rgb(202, 240, 248); */
+  background-color:  rgb(202, 240, 248);
+  /* background-color: rgb(101, 106, 228); */
+
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  margin: 5px; 
+  /* box-shadow: 0 9px #999; */
+  cursor: pointer;
+  font-size: 12px;
+  ;
+}
+
+
+
+.displayResults {
+  /* display:inline-block; */
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.displayResults canvas {
+  display: none;
+}
+
+.userImage {
+  width: 50%;
+  margin-top: 15px;
+  height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* margin-right: 50px; */
+}
+
+.displayResults button{
+  /*display: inline-block;*/
+  /* background: white; */
+  border-radius: 20px;
+  /* background-color: rgb(202, 240, 248); */
+  background-color: rgb(3, 4, 94);
+  color:white; 
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px; 
+  /* box-shadow: 0 9px #999; */
+  cursor: pointer;
+  font-size: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.displayResults button:hover{
+/*display: inline-block;*/
+/* background: white; */
+border-radius: 20px;
+/* background-color: rgb(202, 240, 248); */
+background-color:  rgb(202, 240, 248);
+/* background-color: rgb(101, 106, 228); */
+
+color: black; 
+border: none;
+padding: 10px 20px;
+margin-top: 15px; 
+display: block;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+font-size: 12px;
+;
+}
+.defaultImg {
+  margin-top: 15px;
+  height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* margin-right: 50px; */
+}
+.imageResults {
+  /* padding: 10px; */
+  margin-top: 5px;
+  color: rgb(3, 4, 94);
+  font-weight: bold;
+  text-align: center;
+}
+
+.displayResults h3 {
+  /* padding: 10px; */
+  margin-top: 5px;
+  color: rgb(3, 4, 94);
+  font-weight: bold;
+  text-align: center;
+}
+
+.displayResults p{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  /* display: inline-block; */
+
+}
+.progress-label {
+  margin-bottom: 5px;
+}
+.progress-bar {
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  max-width: 50vw;
+}
+.progress {
+  background-color: rgb(0, 255, 170);
+  width: 0%;
+  height: 10px;
+}
